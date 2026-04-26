@@ -9,7 +9,7 @@ button {
     border-radius: 10px;
     border-width: 0.5vh;
     font-size: 3vh;
-    
+    color: black;
 }
 .nums {
     background-color: orange;
