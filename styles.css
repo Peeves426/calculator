@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     font-family: Arial;
+    display: flex;
 }
 button {
     height: 5vh;
@@ -43,4 +44,9 @@ button {
     font-size: 5vh;
     display: flex;
     align-items: center;
+}
+#gameBtn {
+    background-color: transparent;
+    color: transparent;
+    border-color: transparent;
 }
