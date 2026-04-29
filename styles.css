@@ -46,7 +46,7 @@ button {
     align-items: center;
 }
 #gameBtn {
-    background-color: transparent;
-    color: transparent;
-    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
 }
