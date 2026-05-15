@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project SQL</title>
+    <meta name="description" content="Squirrel Website" />
+    <meta name="keywords" content="Project SQL" />
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <a href="../"><button class="backBtn">back</button></a>
+    <button onclick="toggleFullScreen()" class="gameBtn">Fullscreen</button>
+    </div>
+    <div id="center">
+
+            <iframe src="index1.html" frameborder="1" height="80% " width="90%"></iframe>
+    <script>
+        const iframe = document.getElementById('gameFrame');
+        function toggleFullScreen() {
+            iframe.contentWindow.focus();
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) {
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            } else {
+                alert("Fullscreen not supported in this browser.");
+            }
+            setTimeout(() => {
+                iframe.contentWindow.focus();
+            }, 500);
+        }
+        iframe.addEventListener('click', () => {
+            iframe.contentWindow.focus();
+        });
+    </script>
+</body>
+
+</html>
