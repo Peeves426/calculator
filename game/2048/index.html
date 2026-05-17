@@ -2,21 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project SQL</title>
-    <meta name="description" content="Squirrel Website" />
-    <meta name="keywords" content="Project SQL" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
     <link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body>
-    <a href="../"><button class="backBtn">back</button></a>
-    <button onclick="toggleFullScreen()" class="gameBtn">Fullscreen</button>
+    <div id="hero">
+        <div>
+            <a href="../"><button style="height: fit-content;
+                width: fit-content;">back</button></a>
+                <br>
+            <iframe height="500" 
+                width="700" 
+                id="gameFrame" 
+                src="index1.html" 
+                scrolling="no" 
+                allow="fullscreen; keyboard"
+                allowfullscreen 
+                title="Game"
+            ></iframe>
+            <br>
+            <div id="hero" style="height: 5vh;">
+                <button onclick="toggleFullScreen()" style="height: fit-content;
+                width: fit-content;">Full Screen</button>
+            </div>
+        </div>
     </div>
-    <div id="center">
-
-            <iframe src="index1.html" frameborder="1" height="80% " width="90%"></iframe>
     <script>
         const iframe = document.getElementById('gameFrame');
         function toggleFullScreen() {

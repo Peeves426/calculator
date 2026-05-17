@@ -59,5 +59,8 @@ button {
 .backBtn {
     width: fit-content;
     height: fit-content;
-    position: absolute;
+}
+iframe{
+    height: 50vh;
+    width: 50vh;
 }

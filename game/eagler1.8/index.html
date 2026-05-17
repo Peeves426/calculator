@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project SQL</title>
-    <meta name="description" content="Squirrel Website" />
-    <meta name="keywords" content="Project SQL" />
-    <link rel="stylesheet" href="../../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../../styles.css">
 </head>
+
 <body>
-    <nav class="topbar">
-        <div class="topbar-brand">Project SQL</div>
-        <div class="topbar-links">
-            <a href="../../"><button>Home</button></a>
-            <a href="../"><button>Games</button></a>
-            <a href="../../tools/"><button>Tools</button></a>
-        </div>
-    </nav>
-    <main class="hero">
-        <div class="iframe-container">
-            <iframe
-                height="500"
-                width="700"
-                id="gameFrame"
-                src="index1.html"
-                scrolling="no"
+    <div id="hero">
+        <div>
+            <a href="../"><button style="height: fit-content;
+                width: fit-content;">back</button></a>
+                <br>
+            <iframe height="500" 
+                width="700" 
+                id="gameFrame" 
+                src="index1.html" 
+                scrolling="no" 
                 allow="fullscreen; keyboard"
-                allowfullscreen
+                allowfullscreen 
                 title="Game"
             ></iframe>
+            <br>
+            <div id="hero" style="height: 5vh;">
+                <button onclick="toggleFullScreen()" style="height: fit-content;
+                width: fit-content;">Full Screen</button>
+            </div>
         </div>
-        <div class="buttons">
-            <button onclick="toggleFullScreen()">Full Screen</button>
-        </div>
-    </main>
+    </div>
     <script>
         const iframe = document.getElementById('gameFrame');
         function toggleFullScreen() {
@@ -58,4 +54,5 @@
         });
     </script>
 </body>
+
 </html>
